@@ -21,7 +21,8 @@ const contentTypeMapping = {
   'js': 'application/js',
   'css': 'text/css',
   'html': 'text/html',
-  'src' : 'src/jpg'
+  'src' : 'src/jpg',
+  'jpg' : 'image/jpg'
 }
 fs.readFile(filePath ,(error,file)=>{
   if (error) {
