@@ -7,6 +7,8 @@ function autocomplete(inp, places) {
   /*execute a function when someone writes in the text field:*/
   inp.addEventListener("input", function(e) {
       var a, b, i, val = this.value;
+      console.log(val);
+      
       /*close any already open lists of autocompleted values*/
       closeAllLists();
       if (!val) { return false;}
