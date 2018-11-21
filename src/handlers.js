@@ -33,7 +33,17 @@ fs.readFile(filePath ,(error,file)=>{
   response.writeHead(200, {'Content-Type': contentTypeMapping[extension]})
   response.end(file)
 })
+// const filePath1 =  path.join(__dirname, 'countries.json');
+//  fs.readFile(filePath1, (error,file) =>{
+//   console.log("file", file);
+//   file = String(file);
+//   console.log("String",file);
+//   data = JSON.parse(file);
+//   console.log('data', data);
+//
+// });
 }
+// const autocomplete()
 //---------------------------------------------------------------------
 module.exports = {
   homeHandler,
