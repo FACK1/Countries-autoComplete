@@ -3,8 +3,13 @@
   background-image:
 }
 
-body {
+body{
   font: 16px Arial;
+  background: url('map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 .autocomplete {
@@ -19,7 +24,7 @@ input{
   background-color: #f1f1f1;
   padding: 20px;
   font-size: 20px;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 25%;
 }
 
@@ -28,23 +33,42 @@ input{
   background-color: #f1f1f1;
   padding: 20px;
   font-size: 20px;
-  margin-left: 25%;
-  width: 50%;
+  margin-left: 35%;
+  width: 38%;
 }
 
 input[type=text] {
-  background-color: #f1f1f1;
-  width: 50%;
-  /* align-self: center; */
+  background-color: #3c8ca4;
+  width: 38%;
+  margin-left: 35%;
+  border: 2px solid #4f3426;
+  border-radius: 12px;
 }
+
+::placeholder {
+    color: #4f3426;
+}
+
 h1{
-  background-image: url('map.jpg');
-  background-repeat: no-repeat;
   padding-top: 200px;
+  font-size: 40px;
+  font-family: fantasy;
+  margin-left: 9%;
+  color: #4f3426;
 }
 .autocomplete-active {
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
   width: 100%;
+}
+@@media screen and (min-width:200px) {
+  h1{
+    font-size: 150px;
+  }
+  body{
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
 }
