@@ -11,7 +11,13 @@ const router = (request, response)=> {
 else if (request.url.includes('/public/')) {
         handlers.publicHandler(request,response)
 }
+//else if(request.url = request.url.split[2]){
+
+//}
 //-----------------------------------------------------------------------
+else if (request.url.includes('/search')){
+  handlers.autoComplete(request,response)
+}
 // error-----------------------------------------------------------------
 else{
     response.writeHead(404,{'Content-Type': 'text/html'})
