@@ -10,7 +10,7 @@ Simple website that allows the users to search for a Country name and auto compl
  * main.js
  * index.html 
  * style.css
- * images folder
+ * images
   ##### Src Folder
   * handlers.js
   * router.js
