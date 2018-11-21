@@ -3,7 +3,7 @@
  **The Link of website**: [Countries-autoComplete](https://country-autocomplete.herokuapp.com/)
  
 # About:
-Simple search for a Countries  website, that search for a Country name that auto complete it.
+Simple website that allows the users to search for a Country name and auto complete it.
 
   # App Architecture:
    ##### public Folder
