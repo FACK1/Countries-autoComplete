@@ -13,13 +13,22 @@ body {
   width: 100%;
 }
 
-input {
+input{
   border: 1px solid transparent;
   background-color: #f1f1f1;
   padding: 20px;
   font-size: 20px;
   margin-top: 10%;
   margin-left: 25%;
+}
+
+.autocomplete-items{
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 25%;
+  width: 50%;
 }
 
 input[type=text] {
