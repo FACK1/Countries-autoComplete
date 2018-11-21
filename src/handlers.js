@@ -43,9 +43,28 @@ fs.readFile(filePath ,(error,file)=>{
 //
 // });
 }
+
+const searchHandler= (request, response)=>{
+  const jsonPath = path.join(__dirname, '..', 'src/countries.json')
+
+  fs.readFile(jsonPath, 'utf8',(error,file)=>{
+    if (error) {
+      response.writeHead(500,{'Content-Type': 'text/html'})
+      response.end('<h1> Server error! sorry </h1>')
+      return
+      console.log(error)
+    }
+    response.writeHead(200, {'Content-Type': 'application/json'})
+    console.log(file)
+    console.log(typeof file)
+    response.end(file)
+  //  response.end('{"fgf":["dfd","dfd"]}')
+  })
+}
 // const autocomplete()
 //---------------------------------------------------------------------
 module.exports = {
   homeHandler,
-  publicHandler
+  publicHandler,
+  searchHandler
 }

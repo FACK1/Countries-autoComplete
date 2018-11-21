@@ -3,7 +3,7 @@ const fs = require('fs');
 const http = require('http')
 const router = require('./router')
 
-const PORT = 3002
+const PORT = 3003 
 const server = http.createServer(router)
 
 server.listen(PORT)
