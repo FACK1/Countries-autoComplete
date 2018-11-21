@@ -42,3 +42,9 @@ h1{
   background-repeat: no-repeat;
   padding-top: 200px;
 }
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+  width: 100%;
+}
