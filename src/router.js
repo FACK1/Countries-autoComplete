@@ -12,6 +12,7 @@ else if (request.url.includes('/public/')) {
         handlers.publicHandler(request,response)
 }
 //-----------------------------------------------------------------------
+
 // error-----------------------------------------------------------------
 else{
     response.writeHead(404,{'Content-Type': 'text/html'})
