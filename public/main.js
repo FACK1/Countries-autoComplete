@@ -32,23 +32,9 @@ function viewList(array) {
 
 function removeList() {
 	if (document.getElementById("autocomplete-list")) {
-		document.getElementsByTagName('DIV')[1].remove();
+		document.getElementById("autocomplete-list").remove();
 	}
 }
 
-function findMatch(array, searchIndex) {
-
-	var places = [];
-	var max = 5;
-
-	for (var i = 0; i < array.length; i++) {
-		if (array[i].name.substr(0, searchIndex.length).toUpperCase() ===
-			searchIndex.toUpperCase() && max > 0) {
-			max--;
-			places.push(array[i].name);
-		}
-	}
-	return places;
-}
 
 search();
