@@ -30,26 +30,11 @@ function viewList(array) {
 	}
 }
 
-// function removeList() {
-// 	if (document.getElementById("autocomplete")) {
-//
-// 		document.getElementsByClassName('Country')[1].remove();
-// 	}
-// }
-
-function findMatch(array, searchIndex) {
-	var places = [];
-	var max = 5;
-
-	for (var i = 0; i < array.length; i++) {
-		if (array[i].name.substr(0, searchIndex.length).toUpperCase() ===
-			searchIndex.toUpperCase() && max > 0) {
-			max--;
-			places.push(array[i].name);
-		//document.getElementById("myInput").value =
-    //document.getElementById("myInput").defaultValue = window.location.href.substring(91);
-		}
+function removeList() {
+	if (document.getElementById("autocomplete")) {
+		document.getElementById("autocomplete").remove();
 	}
-	return places;
 }
+
+
 search();
