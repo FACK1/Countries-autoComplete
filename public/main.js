@@ -38,7 +38,6 @@ function removeList() {
 	 var list =	document.getElementById("autocomplete");
     while(list.firstChild){
     		list.firstChild.remove();
-
 		}
 	}
 }
