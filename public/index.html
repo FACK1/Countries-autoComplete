@@ -9,11 +9,11 @@
       <center>
          <h1>Country AutoComplete</h1>
       </center>
-      <form autocomplete="off" action="/search">
-         <div class="autocomplete">
-            <input id="myInput" type="text" name="myCountry" placeholder="Country">
-         </div>
-      </form>
+<form autocomplete="off" action="/search">
+  <input list="autocomplete" id="myInput" type="text" class="Country" placeholder="Country">
+  <datalist id="autocomplete">
+  </datalist>
+</form>
       <script type="text/javascript" src="public/main.js"></script>
       <script type="text/javascript" src="public/places.js"></script>
       

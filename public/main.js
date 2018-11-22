@@ -2,7 +2,7 @@ function search() {
 	inp = document.getElementById("myInput");
 	inp.addEventListener("input", function (e) {
 
-		removeList();
+		// removeList();
 		var placeIndex = inp.value;
 
 		if (placeIndex) {
@@ -19,11 +19,11 @@ function search() {
 }
 
 function viewList(array) {
-	var container = document.createElement("DIV");
-	container.setAttribute("id", "autocomplete-list");
+	var container = document.getElementById("autocomplete");
+	// container.setAttribute("id", "autocomplete-list");
 	inp.parentNode.appendChild(container);
 	for (i = 0; i < array.length; i++) {
-		var item = document.createElement("DIV");
+		var item = document.createElement("option");
 		item.setAttribute("class", "autoComplete-item");
 		item.innerHTML = array[i];
 		container.appendChild(item);
@@ -31,8 +31,8 @@ function viewList(array) {
 }
 
 function removeList() {
-	if (document.getElementById("autocomplete-list")) {
-		document.getElementById("autocomplete-list").remove();
+	if (document.getElementById("autocomplete")) {
+		document.getElementById("autocomplete").remove();
 	}
 }
 
