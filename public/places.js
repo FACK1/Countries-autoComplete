@@ -13,5 +13,5 @@ if(searchIndex !== ""){
 		}
 	}
 }
-	return places;
+	return places.slice(0,5);
 }

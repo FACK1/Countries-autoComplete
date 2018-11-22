@@ -20,8 +20,11 @@ function search() {
 
 function viewList(array) {
 	var container = document.getElementById("autocomplete");
+	//removeList();
+	document.getElementById("autocomplete").innerHTML="";
 	// container.setAttribute("id", "autocomplete-list");
 	inp.parentNode.appendChild(container);
+	console.log(array.length);
 	for (i = 0; i < array.length; i++) {
 		var item = document.createElement("option");
 		item.setAttribute("class", "autoComplete-item");
@@ -32,7 +35,11 @@ function viewList(array) {
 
 function removeList() {
 	if (document.getElementById("autocomplete")) {
-		document.getElementById("autocomplete").remove();
+	 var list =	document.getElementById("autocomplete");
+    while(list.firstChild){
+    		list.firstChild.remove();
+
+		}
 	}
 }
 
