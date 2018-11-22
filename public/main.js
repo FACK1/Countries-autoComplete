@@ -50,5 +50,8 @@ function findMatch(array, searchIndex) {
 	}
 	return places;
 }
+document.addEventListener("click", function (e){
+	removeList(e.target);
+});
 
 search();
